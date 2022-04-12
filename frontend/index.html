@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surdex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Surdex</h1>
+        <ul>
+            <li><a href="#">Acessibilidade</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Sobre nós</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="main-image">
+                <img src="assets/images/main-image.svg" alt="Main image">
+            </section>
+
+            <section class="main-text">
+                <article>
+                    <h1>Dados sobre surdez e acessibilidade no Brasil e no mundo</h1>
+                    <p>
+                    De acordo com a OMS, 1.5 bilhão de pessoas no mundo (19% da
+                    população mundial) vivem com certo grau de deficiência auditiva.
+                    De acordo com a WFD (Federação Mundial dos Surdos), 80% das
+                    pessoas surdas no planeta são analfabetas ou semi-analfabetas e
+                    dependem da Linguagem de sinas em sua comunicação. Assim como já
+                    foi trazido em aula, de acordo com a BigDataCorp, apenas 1% dos
+                    sites brasileiros são considerados acessíveis para surdos e demais
+                    pessoas com deficiência.
+                    </p>
+                </article>
+            </section>
+        </div>
+
+        <section class="more-text">
+            <h1>Fique por dentro de mais informações</h1>
+        </section>
+        <section class="more-buttons">
+            <button>Deficiência auditiva</button>
+            <button>Analfabetas em Libras</button>
+            <button>Sites Acessíveis</button>
+        </section>
+    </main>
+
+    <footer>
+        <h1>Made with 💙 for a more acessible world!</h1>
+    </footer>
+
+    <!-- VLibras by gov br -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>
