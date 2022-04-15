@@ -1,1 +1,0 @@
-# 2022-acessibilidade-07
