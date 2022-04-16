@@ -1,6 +1,6 @@
 #  Surdez
 
-<img src="./images/readme-img.jpg" alt="Print da página">
+<img src="./images-project/readme-img.jpg" alt="Print da página">
 
 <br>
 
