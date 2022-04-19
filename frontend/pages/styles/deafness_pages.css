@@ -44,3 +44,17 @@ header ul li a {
 header ul li a:hover {
     text-decoration: underline;
 }
+
+#texto{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+p{
+    text-align: center;
+    align-items: center;
+}
