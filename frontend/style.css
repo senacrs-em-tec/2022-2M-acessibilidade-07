@@ -132,19 +132,6 @@ footer h1 {
     color: rgba(0,0,0, 70%);
 }
 
-/* .modal-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: red;
-
-} */
-
 @media only screen and (max-width: 600px) {
     html {
       font-size: 12px;
