@@ -1,7 +1,6 @@
-#  Surdez
+#  Projeto Surdex
 
-<img src="./images-project/readme-img.jpg" alt="Print da página">
-
+<img src="./.github/readme-img.jpg" alt="Print da página">
 <br>
 
 

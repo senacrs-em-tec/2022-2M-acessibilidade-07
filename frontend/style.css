@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
 
 ::-webkit-scrollbar {
@@ -65,6 +64,17 @@ header ul li a:hover {
 
 .main-text article p {
     color: rgba(0,0,0, 70%);
+    text-align: justify;
+}
+
+
+.container2 {
+    background: rgb(9,28,144);
+    background: linear-gradient(0deg, rgba(9,28,144,1) 0%, rgba(21,73,167,1) 52%);
+    margin-top: 1rem;
+    width: 100%;
+    height: 17vw;
+    padding: 0.6rem;
 }
 
 .more-text {
@@ -77,22 +87,33 @@ header ul li a:hover {
     margin: 0 0 1rem;
     font-weight: 400;
     font-size: 1.3rem;
-    color:rgba(0,0,0, 70%);
+    color:white;
 }
 
 .more-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
 .more-buttons button {
-    background:#E9E8E8;
-    width: 7vw;
-    height: 11vw;
     border-radius: 5px;
-    border: 0;
-    margin: 0 0.5rem;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 11vw;
+    width: 7vw;
+    background-color: #ffffff;
+    border: 1px solid rgba(22, 76, 167, 0.6);
+    margin: 10px;
+    font-size: 0.7rem;
+}
+
+.more-buttons button a{
+    text-decoration: none;
+    color: black;
 }
 
 /* Footer */
@@ -109,4 +130,23 @@ footer h1 {
     font-weight: 400;
     font-size: 0.6rem;
     color: rgba(0,0,0, 70%);
+}
+
+/* .modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: red;
+
+} */
+
+@media only screen and (max-width: 600px) {
+    html {
+      font-size: 12px;
+    }
 }
