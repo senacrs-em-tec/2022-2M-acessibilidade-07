@@ -16,12 +16,33 @@
         </ul>
     </header>
     <main>
-        <div id="texto">
-           <p><a href="https://www.al.sp.gov.br/noticia/?23/09/2021/dia-internacional-da-linguagem-de-sinais-procura-promover-a-inclusao-de-pessoas-surdas-#:~:text=Apesar%20da%20variedade%20de%20l%C3%ADnguas,Internacional%20da%20Linguagem%20de%20Sinais">FREITAS, Karina. 23/09/2021</a></p>
+        <div class="tdah-buttons">
+            <button onclick="updateFont('large')">A+</button>
+            <button onclick="updateFont()">A-</button>
         </div>
-        <div id="texto">
-            <p><a href="https://cronicasdasurdez.com/quantos-surdos-no-mundo/">MOREIRA, Paula 07/04/2021 </a></p>
+        <div id="refe">
+        <h2> Referências</h2>
+        <div  >
+        <p class=" refes">FREITAS, Karina. Dia Internacional da Linguagem de Sinais procura promover a inclusão de pessoas surdas. <b>Assembleia Legislativa de São Paulo </b>, (2021). Disponível em:  <a href="https://www.al.sp.gov.br/noticia/?23/09/2021/dia-internacional-da-linguagem-de-sinais-procura-promover-a-inclusao-de-pessoas-surdas-#:~:text=Apesar%20da%20variedade%20de%20l%C3%ADnguas,Internacional%20da%20Linguagem%20de%20Sinais">https://www.al.sp.gov.br/noticia/?23/09/2021/dia-internacional-da-linguagem-de-sinais-procura-promover-a-inclusao-de-pessoas-surdas-#:~:text=Apesar%20da%20variedade%20de%20l%C3%ADnguas,Internacional%20da%20Linguagem%20de%20Sinais</a>. Acesso em 10  abril 2022.</p>
+        </div>
+        <br>
+        <div >
+        <p class=" refes">MOREIRA, Paula Pfeifer.  Quantos surdos há no mundo: 1,5 bilhão e a maioria NÃO usa Libras <b> cronicasdasurdez </b>, (2021). Disponível em:  <a href="https://cronicasdasurdez.com/quantos-surdos-no-mundo/"> https://cronicasdasurdez.com/quantos-surdos-no-mundo/</a>. Acesso em 10  abril 2022.</p>
+        </div>
         </div>
     </main>
+
+    <!-- VLibras by gov br -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+        const updateFont = (type) => type == "large" ? document.getElementById("body").style.fontSize = "xx-large" : document.getElementById("body").style.fontSize = "16px";
+    </script>
 </body>
 </html>

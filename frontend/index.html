@@ -7,17 +7,21 @@
     <title>Surdex</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
     <header>
         <h1>Surdex</h1>
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="pages/docs.html" target="_blank" >Documentação</a></li>
-            <li><a href="pages/menu.html" target="_blank">Referencias</a></li>
+            <li><a href="pages/menu.html" target="_blank">Referências</a></li>
         </ul>
     </header>
 
     <main>
+        <div class="tdah-buttons">
+            <button onclick="updateFont('large')">A+</button>
+            <button onclick="updateFont()">A-</button>
+        </div>
         <div class="container">
             <section class="main-image">
                 <img src="assets/images/main-image.svg" alt="Main image">
@@ -34,7 +38,7 @@
                     dependem da Linguagem de sinas em sua comunicação. Assim como já
                     foi trazido em aula, apenas 1% dos
                     sites brasileiros são considerados acessíveis para surdos e demais
-                    pessoas com deficiência.(OMS 2021)
+                    pessoas com deficiência (OMS 2021).
                     </p>
                 </article>
             </section>
@@ -66,6 +70,7 @@
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
+        const updateFont = (type) => type == "large" ? document.getElementById("body").style.fontSize = "xx-large" : document.getElementById("body").style.fontSize = "16px";
     </script>
 </body>
 </html>

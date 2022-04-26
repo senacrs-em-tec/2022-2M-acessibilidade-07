@@ -58,3 +58,21 @@ p{
     text-align: center;
     align-items: center;
 }
+#refe{
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+.refes{
+    text-align: justify;
+}
+
+.tdah-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.tdah-buttons button {
+    width: 3vw;
+    margin-right: 10px;
+}

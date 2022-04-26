@@ -137,3 +137,14 @@ footer h1 {
       font-size: 12px;
     }
 }
+
+.tdah-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.tdah-buttons button {
+    width: 3vw;
+    margin-right: 10px;
+}

@@ -16,10 +16,27 @@
         </ul>
     </header>
     <main>
+        <div class="tdah-buttons">
+            <button onclick="updateFont('large')">A+</button>
+            <button onclick="updateFont()">A-</button>
+        </div>
         <div id="texto">
             <p>Assim como já foi trazido em aula, de acordo com a BigDataCorp, apenas 1% dos sites brasileiros são considerados acessíveis para surdos e demais pessoas com deficiência.
             </p>
         </div>
     </main>
+
+    <!-- VLibras by gov br -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+        const updateFont = (type) => type == "large" ? document.getElementById("body").style.fontSize = "xx-large" : document.getElementById("body").style.fontSize = "16px";
+    </script>
 </body>
 </html>

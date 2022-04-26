@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
-
+.documentacao{
+   margin-left: 10vh;
+}
 #documentation{
    margin-top: 20vh;
+  
 }
 #objective{
    margin-top: 20vh;
-   text-align: center;
+   
 }
 
 #solucao{
@@ -64,3 +67,14 @@ margin-top: 30vh;
    font-size: 4vh;
 }
 
+
+.tdah-buttons {
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
+
+.tdah-buttons button {
+   width: 3vw;
+   margin-right: 10px;
+}
