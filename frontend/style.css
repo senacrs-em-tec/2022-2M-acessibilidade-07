@@ -73,7 +73,7 @@ header ul li a:hover {
     background: linear-gradient(0deg, rgba(9,28,144,1) 0%, rgba(21,73,167,1) 52%);
     margin-top: 1rem;
     width: 100%;
-    height: 17vw;
+    height: 19vh;
     padding: 0.6rem;
 }
 
@@ -103,8 +103,8 @@ header ul li a:hover {
     text-decoration: none;
     cursor: pointer;
     text-transform: uppercase;
-    height: 11vw;
-    width: 7vw;
+    height: 5vh;
+    width: 20vw;
     background-color: #ffffff;
     border: 1px solid rgba(22, 76, 167, 0.6);
     margin: 10px;

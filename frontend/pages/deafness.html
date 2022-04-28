@@ -1,42 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/deafness_pages.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/deafness_pages.css" />
     <title>Deficiência auditiva</title>
-</head>
-<body id="body">
+  </head>
+  <body id="body">
     <header>
-        <h1>Surdex</h1>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="docs.html">Documentação</a></li>
-        </ul>
+      <h1>Surdex</h1>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="docs.html">Documentação</a></li>
+      </ul>
     </header>
     <main>
-        <div class="tdah-buttons">
-            <button onclick="updateFont('large')">A+</button>
-            <button onclick="updateFont()">A-</button>
-        </div>
-        <div id="texto">
-            <p>De acordo com a OMS, 1.5 bilhão de pessoas no mundo (19% da população mundial) vivem com certo grau de deficiência auditiva. 
-            </p>
-        </div>
+      <div class="tdah-buttons">
+        <button onclick="updateFont('large')">A+</button>
+        <button onclick="updateFont()">A-</button>
+      </div>
+      <div id="texto">
+        <p>
+          Surdez consiste na perda total ou significativa da audição, geralmente
+          resultando em danos no nervo ou no ouvido interno. Pode ser causada
+          por um defeito congênito, lesão, doença, certos medicamentos,
+          exposição a ruído alto ou desgaste relacionado à idade. O principal
+          sintoma é a incapacidade de ouvir sons. Em alguns casos, cirurgia ou o
+          uso de um aparelho auditivo podem restaurar a audição. Habilidades de
+          leitura labial, texto escrito e língua de sinais podem ajudar com a
+          comunicação.
+        </p>
+        <p>
+          De acordo com a OMS, 1.5 bilhão de pessoas no mundo (19% da população
+          mundial) vivem com certo grau de deficiência auditiva. A doença pode
+          ser dividia em quatro tipos, sendo elas: Leve, Moderada, Severa e
+          Profunda.
+        </p>
+
+        <p>
+          Em caso de <b>surdez leve</b>, o deficiente auditivo ouve bem os
+          graves, mas sente dificuldade com o agudo.
+        </p>
+
+        <p>
+          Em caso de <b>surdez</b> moderada, o deficiente auditivo ouve sons
+          graves menores ruidosos e, se em ambiente com musica, não compreende
+          as falas.
+        </p>
+        <p>
+          Já na <b>surdez severa</b>, o surdo nao ouve a fala humana e raramente
+          escuta seu celular chamando.
+        </p>
+        <p>
+          Por sua vez a <b>surdez profunda</b> torna impossível que o surdo
+          escute qualquer coisa.
+        </p>
+      </div>
     </main>
 
     <!-- VLibras by gov br -->
     <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-        const updateFont = (type) => type == "large" ? document.getElementById("body").style.fontSize = "xx-large" : document.getElementById("body").style.fontSize = "16px";
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+      const updateFont = (type) =>
+        type == "large"
+          ? (document.getElementById("body").style.fontSize = "xx-large")
+          : (document.getElementById("body").style.fontSize = "16px");
     </script>
-</body>
+  </body>
 </html>

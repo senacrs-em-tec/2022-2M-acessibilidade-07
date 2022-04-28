@@ -1,48 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/deafness_pages.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/deafness_pages.css" />
     <title>Referencias</title>
-</head>
-<body id="body">
+  </head>
+  <body id="body">
     <header>
-        <h1>Surdex</h1>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="docs.html">Documentação</a></li>
-        </ul>
+      <h1>Surdex</h1>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="docs.html">Documentação</a></li>
+      </ul>
     </header>
     <main>
-        <div class="tdah-buttons">
-            <button onclick="updateFont('large')">A+</button>
-            <button onclick="updateFont()">A-</button>
+      <div class="tdah-buttons">
+        <button onclick="updateFont('large')">A+</button>
+        <button onclick="updateFont()">A-</button>
+      </div>
+      <div id="refe">
+        <h2>Referências</h2>
+        <div>
+          <p class="refes">
+            FREITAS, Karina. Dia Internacional da Linguagem de Sinais procura
+            promover a inclusão de pessoas surdas.
+            <b>Assembleia Legislativa de São Paulo </b>, (2021). Disponível em:
+            <a
+              href="https://www.al.sp.gov.br/noticia/?23/09/2021/dia-internacional-da-linguagem-de-sinais-procura-promover-a-inclusao-de-pessoas-surdas-#:~:text=Apesar%20da%20variedade%20de%20l%C3%ADnguas,Internacional%20da%20Linguagem%20de%20Sinais"
+              >https://www.al.sp.gov.br/noticia/?23/09/2021/dia-internacional-da-linguagem-de-sinais-procura-promover-a-inclusao-de-pessoas-surdas-#:~:text=Apesar%20da%20variedade%20de%20l%C3%ADnguas,Internacional%20da%20Linguagem%20de%20Sinais</a
+            >. Acesso em 10 abril de 2022.
+          </p>
         </div>
-        <div id="refe">
-        <h2> Referências</h2>
-        <div  >
-        <p class=" refes">FREITAS, Karina. Dia Internacional da Linguagem de Sinais procura promover a inclusão de pessoas surdas. <b>Assembleia Legislativa de São Paulo </b>, (2021). Disponível em:  <a href="https://www.al.sp.gov.br/noticia/?23/09/2021/dia-internacional-da-linguagem-de-sinais-procura-promover-a-inclusao-de-pessoas-surdas-#:~:text=Apesar%20da%20variedade%20de%20l%C3%ADnguas,Internacional%20da%20Linguagem%20de%20Sinais">https://www.al.sp.gov.br/noticia/?23/09/2021/dia-internacional-da-linguagem-de-sinais-procura-promover-a-inclusao-de-pessoas-surdas-#:~:text=Apesar%20da%20variedade%20de%20l%C3%ADnguas,Internacional%20da%20Linguagem%20de%20Sinais</a>. Acesso em 10  abril 2022.</p>
+        <br />
+        <div>
+          <p class="refes">
+            MOREIRA, Paula Pfeifer. Quantos surdos há no mundo: 1,5 bilhão e a
+            maioria NÃO usa Libras <b> cronicasdasurdez </b>, (2021). Disponível
+            em:
+            <a href="https://cronicasdasurdez.com/quantos-surdos-no-mundo/">
+              https://cronicasdasurdez.com/quantos-surdos-no-mundo/</a
+            >. Acesso em 10 abril de 2022.
+          </p>
         </div>
-        <br>
-        <div >
-        <p class=" refes">MOREIRA, Paula Pfeifer.  Quantos surdos há no mundo: 1,5 bilhão e a maioria NÃO usa Libras <b> cronicasdasurdez </b>, (2021). Disponível em:  <a href="https://cronicasdasurdez.com/quantos-surdos-no-mundo/"> https://cronicasdasurdez.com/quantos-surdos-no-mundo/</a>. Acesso em 10  abril 2022.</p>
+        <br />
+        <div>
+          <p class="refes">
+            GALILEU, Redação. Apenas 0,74% dos sites brasileiros são acessíveis a pessoas com deficiência (2020). Disponível
+            em:
+            <a href="https://revistagalileu.globo.com/Tecnologia/noticia/2020/05/apenas-074-dos-sites-brasileiros-sao-acessiveis-pessoas-com-deficiencia.html?msclkid=5be2733ac6fb11eca7e0ffc332e1fa6d">
+                https://revistagalileu.globo.com/Tecnologia/noticia/2020/05/apenas-074-dos-sites-brasileiros-sao-acessiveis-pessoas-com-deficiencia.html?msclkid=5be2733ac6fb11eca7e0ffc332e1fa6d</a
+            >. Acesso em 28 abril de 2022.
+          </p>
         </div>
-        </div>
+      </div>
     </main>
 
     <!-- VLibras by gov br -->
     <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-        const updateFont = (type) => type == "large" ? document.getElementById("body").style.fontSize = "xx-large" : document.getElementById("body").style.fontSize = "16px";
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+      const updateFont = (type) =>
+        type == "large"
+          ? (document.getElementById("body").style.fontSize = "xx-large")
+          : (document.getElementById("body").style.fontSize = "16px");
     </script>
-</body>
+  </body>
 </html>
